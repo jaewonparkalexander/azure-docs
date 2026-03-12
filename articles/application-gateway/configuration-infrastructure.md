@@ -71,7 +71,7 @@ When an instance of your Application Gateway issues a DNS query, it uses the val
 
 ### Virtual network permission
 
-The Application Gateway resource is deployed inside a virtual network, so checks are also performed to verify the permission on the virtual network resource. This validation is performed during both creation and management operations and also applies to the [managed identities for Application Gateway Ingress Controller](./tutorial-ingress-controller-add-on-new.md#deploy-an-aks-cluster-with-the-add-on-enabled).
+The Application Gateway resource is deployed inside a virtual network, so checks are also performed to verify the permission on the virtual network resource. This validation is performed during both creation and management operations and also applies to the [managed identities for Application Gateway Ingress Controller](./tutorial-ingress-controller-add-on-new.md#enable-the-add-on-for-the-existing-AKS-cluster).
 
 Check your [Azure role-based access control](/azure/role-based-access-control/role-assignments-list-portal) to verify that the users and service principals that operate application gateways have at least the following permissions on the virtual network or subnet:
 - **Microsoft.Network/virtualNetworks/subnets/join/action** 

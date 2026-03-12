@@ -57,7 +57,7 @@ Deploying a new AKS cluster with the AGIC add-on enabled without specifying an e
 az aks create -n myCluster -g myResourceGroup --network-plugin azure --enable-managed-identity -a ingress-appgw --appgw-name myApplicationGateway --appgw-subnet-cidr "10.225.0.0/16" --generate-ssh-keys
 ```
 
-## Enable the add-on for the Existing AKS cluster
+## Enable the add-on for the existing AKS cluster
 
 You already have an existing AKS cluster and will enable the AGIC add-on. The add-on can be enabled either through the Azure portal or by using the Azure CLI.
 
